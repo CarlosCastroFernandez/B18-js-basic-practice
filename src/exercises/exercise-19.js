@@ -30,8 +30,6 @@ function lettersOcurrences(cadena) {
       }
         mapa.set(letra,contador)
         contador=0;
-    
-   
   }
    return mapa;
 }

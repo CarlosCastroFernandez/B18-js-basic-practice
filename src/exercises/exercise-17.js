@@ -7,8 +7,6 @@ Ejemplo: "This is a hashtag" se transforma en "#ThisIsAHashtag"
 */
 export function exercise17(string) {
   // Escribe tu solución aquí
-
-
   return converter(string);
 }
   function converter(string){
