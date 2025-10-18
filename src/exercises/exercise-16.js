@@ -18,13 +18,13 @@ export function exercise16(movies) {
 
   let arrayMejoresPelis=[];
   for(let i=0;i<actors.length;i++){
-     arrayMejoresPelis.push(betterFilmByActor(mapa,i)[0]);
+     arrayMejoresPelis.push(betterFilmByActor(mapa,i,actors)[0]);
   }
   return arrayMejoresPelis;
  
 
 }
-  function betterFilmByActor(mapa,indice){
+  function betterFilmByActor(mapa,indice,actors){
     let arrayMejores=[];
     let arrayValues=Array.from(mapa.values());
     arrayValues= arrayValues.filter(value=>value.actors.includes(actors[indice]));

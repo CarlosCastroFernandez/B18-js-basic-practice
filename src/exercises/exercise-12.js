@@ -24,6 +24,11 @@ function sortStrings(a, b) {
   return 0;
 }
 function sorted(movies){
+  let arrayTitle=[];
   const moviesSorted= movies.sort((a,b)=>sortStrings(a.title,b.title));
-  return moviesSorted;
+  moviesSorted.forEach(element => {
+    let {title}=element
+    arrayTitle.push(title);
+  });
+  return arrayTitle;
 }
