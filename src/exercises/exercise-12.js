@@ -11,6 +11,11 @@ que recibe como parámetro dos cadenas y devuelve -1 si la primera es menor que 
 */
 export function exercise12(movies) {
   // Escribe tu solución aquí
+    function sorted(movies){
+     const moviesSorted= movies.sort((a,b)=>sortStrings(a.title,b.title));
+     return moviesSorted;
+  }
+  return sorted(movies);
 }
 
 function sortStrings(a, b) {
