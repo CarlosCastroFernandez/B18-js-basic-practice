@@ -10,8 +10,9 @@ Ejemplos:
 Nota: los signos de puntuación, mayúsculas y espacios deben ser ignorados (no incluyas los acentos). 
 */
 export function exercise06(string) {
-  // Escribe tu solución aquí
-  // return [condición]
-  //   ? `The phrase '${string}' is a palindrome`
-  //   : `The phrase '${string}' is NOT a palindrome`;
+
+  return string.split("").reverse().join("").toLowerCase()
+          ===string.split("").join("").toLowerCase()
+          ?"Es palíndromo"
+          :"No es palíndromo";
 }

@@ -7,8 +7,21 @@ Atención: cuidado con vocales aisladas y con espacios en blanco dobles
 */
 export function exercise04(string) {
   const vowels = "aeiouAEIOU";
+  let result="";
+  let  bandera=0
+  for (let i=0;i<string.length;i++){
 
+      if(string[i-1]===" "&&string[i+1]===" "&&vowels.includes(string[i])){
+        bandera++;
+        result+=string[i];
+      }
+    if( !vowels.includes( string[i])&&bandera===0){
+          result+=string[i];
+    }
+    bandera=0;
+  }
   // Escribe tu solución aquí
 
   return result;
 }
+

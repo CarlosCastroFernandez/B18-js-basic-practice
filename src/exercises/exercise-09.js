@@ -10,6 +10,14 @@ Ejemplo:
 */
 export function exercise09(length, start, end) {
   // Escribe tu solución aquí
+  let array=new Array(length);
+  for (let i=0;i<array.length;i++){
+    array[i]=Math.floor(Math.random() * (end - start + 1));
+  }
+  let arrayOfRandomNumbers=[...array].sort((a,b)=>a-b);
+  let min=arrayOfRandomNumbers[0];
+  let max=arrayOfRandomNumbers[arrayOfRandomNumbers.length-1]; 
 
-  return `The minimum number is ${min} and the maximum number is ${max} in ${arrayOfRandomNumbers}`;
+  return `The minimum number is ${min} and the maximum number is ${max} in ${array}`;
 }
+
