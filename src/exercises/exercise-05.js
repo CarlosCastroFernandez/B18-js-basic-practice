@@ -11,7 +11,11 @@ Ejemplos:
 */
 export function exercise05(string) {
   // Escribe tu solución aquí
-  function cadenaRepetida(string){
+  
+  const result=cadenaRepetida(string);
+  return result;
+}
+function cadenaRepetida(string){
     let result="";
     for (let i=0;i<string.length;i++){
        for( let u=0;u<i+1;u++){
@@ -25,6 +29,3 @@ export function exercise05(string) {
     }
     return result;
   }
-  const result=cadenaRepetida(string);
-  return result;
-}

@@ -15,7 +15,16 @@ export function exercise16(movies) {
   movies.forEach(element => {
     mapa.set(element.title,element);
   });
-  function betterFilmbyActor(mapa,indice){
+
+  let arrayMejoresPelis=[];
+  for(let i=0;i<actors.length;i++){
+     arrayMejoresPelis.push(betterFilmByActor(mapa,i)[0]);
+  }
+  return arrayMejoresPelis;
+ 
+
+}
+  function betterFilmByActor(mapa,indice){
     let arrayMejores=[];
     let arrayValues=Array.from(mapa.values());
     arrayValues= arrayValues.filter(value=>value.actors.includes(actors[indice]));
@@ -23,11 +32,3 @@ export function exercise16(movies) {
     arrayMejores.push(arrayValues[0]);
     return arrayMejores;
   }
-  let arrayMejoresPelis=[];
-  for(let i=0;i<actors.length;i++){
-     arrayMejoresPelis.push(betterFilmbyActor(mapa,i)[0]);
-  }
-  return arrayMejoresPelis;
- 
-
-}

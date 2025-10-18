@@ -17,16 +17,7 @@ Nota: siempre letras minúsculas y sin tildes (para simplificar)
 */
 export function exercise18(string) {
   // Escribe tu solución aquí
-  function sinTildes(string) {
-    let sinTildes = string.toLowerCase();
-    sinTildes = sinTildes.replace(/á/g, "a");
-    sinTildes = sinTildes.replace(/é/g, "e");
-    sinTildes = sinTildes.replace(/í/g, "i");
-    sinTildes = sinTildes.replace(/ó/g, "o");
-    sinTildes = sinTildes.replace(/ú/g, "u");
-    sinTildes = sinTildes.replace(/\s/g, ""); // elimina todos los espacios
-    return sinTildes;
-  }
+
   function contadorLetras(cadena){
     let contador=0;
     let mapa=new Map();
@@ -48,4 +39,14 @@ export function exercise18(string) {
   let mapaReturn=contadorLetras(converter)
   return Object.fromEntries(mapaReturn);
 }
+  function sinTildes(string) {
+    let sinTildes = string.toLowerCase();
+    sinTildes = sinTildes.replace(/á/g, "a");
+    sinTildes = sinTildes.replace(/é/g, "e");
+    sinTildes = sinTildes.replace(/í/g, "i");
+    sinTildes = sinTildes.replace(/ó/g, "o");
+    sinTildes = sinTildes.replace(/ú/g, "u");
+    sinTildes = sinTildes.replace(/\s/g, ""); // elimina todos los espacios
+    return sinTildes;
+  }
 

@@ -8,6 +8,9 @@ Ejemplo: "This is a hashtag" se transforma en "#ThisIsAHashtag"
 export function exercise17(string) {
   // Escribe tu solución aquí
 
+
+  return converter(string);
+}
   function converter(string){
     let split=string.split(" ");
     let concatena="";
@@ -19,5 +22,3 @@ export function exercise17(string) {
     }
     return concatena;
   }
-  return converter(string);
-}

@@ -11,8 +11,12 @@ Nota: los signos de puntuación, mayúsculas y espacios deben ser ignorados (no 
 */
 export function exercise06(string) {
 
+  return isPalindromo(string);
+}
+
+function isPalindromo(string){
   return string.split("").reverse().join("").toLowerCase()
-          ===string.split("").join("").toLowerCase()
-          ?"Es palíndromo"
-          :"No es palíndromo";
+        ===string.split("").join("").toLowerCase()
+        ?"Es palíndromo"
+        :"No es palíndromo";
 }
