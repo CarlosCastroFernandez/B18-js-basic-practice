@@ -10,7 +10,7 @@ export function exercise10(string) {
 
   let copiaArray=[...splitArray(string)];
   for (let i=0;i<copiaArray.length;i++){
-      copiaArray[i]=alphabet.indexOf(copiaArray[i]);
+      copiaArray[i]=alphabet.indexOf(copiaArray[i])+1;
     
   }
   return copiaArray;
