@@ -7,6 +7,7 @@ Atención: cuidado con vocales aisladas y con espacios en blanco dobles
 */
 export function exercise04(string) {
   const vowels = "aeiouAEIOU";
+  // Escribe tu solución aquí
   let result="";
   let  bandera=0
   for (let i=0;i<string.length;i++){
@@ -20,7 +21,7 @@ export function exercise04(string) {
     }
     bandera=0;
   }
-  // Escribe tu solución aquí
+
 
   return result;
 }
