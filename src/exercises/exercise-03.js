@@ -8,10 +8,11 @@ export function exercise03(string) {
   const vowels = "aeiou";
   // Escribe tu solución aquí
   let result=0;
-  let arrayString=string.split("");
+  let arrayString=string.toLowerCase().split("");
   arrayString.forEach(string => {
     if (vowels.includes(string)) result++;
   });
 
   return `Number of vowels in '${string}' is ${result}`;
 }
+
