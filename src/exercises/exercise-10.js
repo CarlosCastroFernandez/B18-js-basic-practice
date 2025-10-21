@@ -7,7 +7,6 @@ que ocupa cada carácter en el abecedario. Para que sea más sencillo, elimina l
 
 export function exercise10(string) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
-
   let copiaArray=[...splitArray(string)];
   for (let i=0;i<copiaArray.length;i++){
       copiaArray[i]=alphabet.indexOf(copiaArray[i])+1;
