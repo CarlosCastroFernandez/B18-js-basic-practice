@@ -6,4 +6,9 @@ por valoracion (propiedad "rating") de mayor a menor
 */
 export function exercise11(movies) {
   // Escribe tu solución aquí
+  return sorted(movies)
+}
+function sorted(movies){
+  const moviesSorted= movies.sort((a,b)=>b.rating-a.rating);
+  return moviesSorted;
 }
