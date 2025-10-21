@@ -17,8 +17,18 @@ Nota: evita llamar a la función con números altos en la versión recursiva.
 
 export function exercise20(n) {
   // Escribe tu solución aquí
+    if(n===1) return 1;
+    if (n===0) return 0;
+    return exercise20(n-1) +exercise20(n-2);
 }
 
 export function exercise20Iterative(n) {
   // Escribe tu solución aquí
+  if (n === 0) return [];
+  if (n === 1) return [0];
+  let array=[0,1];
+  for (let i=2;i<=n;i++){
+    array.push(array[i-1]+array[i-2]);
+  }
+  return array;
 }
